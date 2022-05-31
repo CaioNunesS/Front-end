@@ -1,0 +1,15 @@
+.titulo-principal
+ {
+color: #c93737;
+background-color: aqua;
+text-align: center;
+font-size:24px ;
+
+}
+h2 {
+
+    color: rgb(83, 100, 211);
+    background-color: red;
+    padding: 60;
+    margin-top: 60;
+}
