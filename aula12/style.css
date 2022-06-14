@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+
 * {
 
     padding: 0;
@@ -18,12 +22,14 @@
     align-items: flex-end;
     justify-content: center;
     padding: 60px;
+    
 
 }
 header {display: flex;
+    height: 25px;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 60px;
     background-color: #F0A83E;
    
 }
@@ -54,4 +60,14 @@ header {display: flex;
 
     color: white;
     font-size: 72px;
+    
+ }
+ .second-section{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+ }
+ 
+ .Comedoro{
+   width: 300px;
  }
