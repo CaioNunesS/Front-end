@@ -7,6 +7,12 @@
     outline: none;
     font-family: 'Roboto', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #243b62;
+}
 header{
     display: flex;
     align-items: center;
@@ -15,35 +21,53 @@ header{
     height: 100px;
     overflow: hidden;
     padding: 50px 40px;
+    position: sticky;
+    top: 0px;
+
+    
 
 }
+header h1{
+    position: relative;
+   right: 550px;
+   color: #d7e8e8;
+}
+
 
 header img{
+  
     width: 70px;
     height: 70px;
+    
+   
+
+    
 }
 
 header ul{
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 12px;
+    gap: 20px;
     text-decoration: none;
    
 }
 header ul a {
     text-decoration: none;
     font-weight: 200px;
+    color: azure
+    ;
 }
-.main-about{
-    height: 50vh;
-    background-image: url(./images.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-   
-    
+main section{
+    padding: 110px;
+}
 
+
+.main-about{
+    height: 100vh;
+    background-color: #243b62;
+    color: #d7e8e8;
+    display: flex;
     
 }
 .card-container{
@@ -51,12 +75,43 @@ header ul a {
     gap: 50px;
     padding-top: 50px;
     justify-content: center;
+    background-color: #243b62;
+    height: 100vh;
+    align-items: center;
+   
     
 }
 .card-container section{
     width: 300px;
     height: 400px;
     background-color: #d7e8e8;
+    overflow: hidden;
+    padding: 0px;
     
+    
+}
+.card-container selection .img{
+    width: 200px;
+}
 
+.video{
+    background-color: #243b62;
+    padding-top: 40px;
+    width: 100vw;
+    height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.video1{
+    
+}
+
+footer{
+    display: flex;
+    background-color: #172b4d;
+    color: #d7e8e8;
+
+
+    
 }
