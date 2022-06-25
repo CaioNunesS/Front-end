@@ -48,10 +48,14 @@ header ul{
     flex-direction: column;
     justify-content: center;
     padding: 10px;
-    
+    cursor: pointer;
 }
 .main-section input{
     border-radius: 12px;
+    transform: scale(1.5);
+}
+.main-section input:hover{
+    cursor: pointer;
 }
 .main-section .selecao{
     border-radius: 12px;
