@@ -8,6 +8,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Roboto', sans-serif;
+    border: none;
 }
 body{
 
@@ -44,6 +45,9 @@ body{
     opacity: 1;
     transform: scale(1.5);
 }
+.main-header form{
+    display: none;
+}
 .main-header .litle-car{
     width: 25px;
     height: 24px;
@@ -52,7 +56,19 @@ body{
 .main-header .litle-car:hover{
     transform: scale(1.3);
 
-
+}
+@media (max-width: 425px){
+    .main-header ul{
+        display: none;
+        
+    }
+    .main-header .button-options{
+        display: flex;
+        width: 27px;
+        height: 27px;
+        /* background-image:url(./images/icon-options.png) ; */
+            
+    }
 }
 
 .first-section{
@@ -97,6 +113,14 @@ body{
 .first-section a{
     
     color: #f0f8ff;
+}
+@media (max-width: 425px){
+    .first-section{
+        padding-left: 20px;
+        
+
+
+    }
 }
 .second-section{
     display: flex;
@@ -160,6 +184,17 @@ body{
     font-size: 10px;
     color: #619D00;
 }
+
+@media (max-width: 425px){
+    .second-section .second-section-divs{
+        display: flex;
+        flex-direction: column;
+    } 
+    .second-section{
+        text-align: center;
+    }
+
+}
 .third-section{
     width: 100%;
     height: 50vh;
@@ -169,30 +204,32 @@ body{
     margin-top: 100px;
     
 }
-.third-section .third-section-divs{
+.third-section .third-section-buttons{
     width: 100%;
     display: flex;
-    gap: 50px;
     margin-top: 50px;
     align-items: center;
-    justify-content: center;
-    justify-content: space-evenly;
-    gap: 30px;
+    gap: 150px;
+    transition: .05;
 }
 
-.third-section-divs .backgroud-div1{
+.third-section-buttons .background-button1{
     color: #FFFFFF;
     font-size: 25px;
     width: 381px;
     display: flex;
+    height: 135px;
     justify-content: center;
     align-items: center; 
-    height: 135px;
     background-image: url(./images/background1-third-section.png);
     border-radius: 12px;
 
 }
-.third-section-divs .backgroud-div2{
+.third-section-buttons .background-button1:hover{
+    transform: scale(1.05);
+}
+
+.third-section-buttons .background-button2{
     color: #FFFFFF;
     font-size: 25px;
     width: 381px;
@@ -203,23 +240,76 @@ body{
     background-image: url(./images/background2-third-section.png);
     border-radius: 12px;
 }
+.third-section-buttons .background-button2:hover{
+    transform: scale(1.05);
+}
+@media (max-width: 425px){
+    .third-section{
+        text-align: center;
+        height: fit-content;
+    }
+    .third-section .third-section-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 80px;
+    }
+    .third-section .third-section-buttons img{
+        width: 66.8px;
+        height: 29px;
+    }
+}
+
 footer{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #323131;
-    height: 105px;
-    gap: 100px;
+    height: 216px;
+    padding: 100px;
 
 }
-footer img{
-    width: 75px;
-    height: 75px;
+footer section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+footer div{
+
+    display: flex;
+    gap: 40px;
+}
+footer h2{
+    
+    color: #FFFFFF;
+}
+footer div img{
+    width: 32px;
+    height: 25.99px;
     transition: .05;
 } 
 footer img:hover{
     transform: scale(1.2);
 }
+@media (max-width:425px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 191px;
+        gap: 30px;
 
+    }
+    footer h2{
+        font-size: 25px;
+
+    }
+    footer div img{
+        width: 32px;
+        height: 26px;
+    }
+    
+    
+}
 
 
